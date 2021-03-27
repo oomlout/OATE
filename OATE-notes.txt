@@ -1,0 +1,21 @@
+######  OATE Notes  ######
+##########################
+
+
+
+#####  Naming Notes
+
+	Base		The table on the ender 3
+		Base-Plate	BAPL	For connecting to the ender 3
+			-- Implemented in Corel Draw
+		PCB-Holder	PCBH	Connects to the base plate to hold the PCB panel
+			-- Not yet done
+	Head
+		Carriage-Adapter	CAAD	Adapter for connecting to the carriage on the ender 3
+			-- Implemented in corel draw
+		Pen Holder			PENH	For connecting a pen to a NEMA 17
+		Main-Plate			MANP	The plate for connecting all the bits to the head
+			Pen-Mech		PENM	for connecting the pen holder to the head
+			Pogo-Pins		POGP	Portion with pogo pins
+			QR-Reader		QRRE	Qr code reader
+			RF-Probe		RFPR	RF Probe
