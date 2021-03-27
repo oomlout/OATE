@@ -25,7 +25,7 @@ module OATEpenHolder(){
     //pen
     penRad = 17/2;
     penLength = 100;
-    oi("Cylinder",x=penOffset,y=-penLength*3/4,z=17/2,rad=penRad,depth=penLength,rotX=90);
+    oi("Cylinder",x=penOffset,y=-penLength*3/4,z=17/2,rad=penRad,depth=penLength,rotX=90,color="red",alpha=.5);
     
     
 }
