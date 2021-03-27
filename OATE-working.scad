@@ -1,20 +1,24 @@
 s="3DPR";
+//m="CAAD";
 include <OPSC-base.scad>
 
 //test();
-OATEpenHolder();
-
 
 //OATEdrawPENH();
-OATEdrawCAAD();
+if(m=="CAAD"){
+    OATEdrawCAAD();
+}
 
 
 
 module test(){
-    OPSCInsert("OOBBHole",100,0,0);
-    OPSCInsert("OOBBHoleSlot",50,0,0,rotZ=45);
+    //OPSCInsert("OOBBHole",100,0,0);
+    //OPSCInsert("OOBBHoleSlot",50,0,0,rotZ=45);
     //OPSCInsert("M3SocketHeadFull",0,0,0);
-    OPSCInsert("M3SocketHead",0,0,0,length=25);
+    //OPSCInsert("M3SocketHead",0,0,0,length=25);
+    //OPSCInsert("cubeRounded",width=20,height=20,depth=6,rad=5);
+    //OPSCInsert("cube",width=20,height=20,depth=6,rad=5,alpha=0.3,color="red");
+    
 }
 
 
@@ -38,8 +42,20 @@ module OATEdrawPENH(){
 
 // Draw CAAD --- Carriage Adapter
 module OATEdrawCAAD(){
-    oi("holeM3");
-    
+    difference(){
+        oi("cubeRounded",width=72,height=57,depth=6);
+        oi("holeM3",24,7.5);
+        oi("holeM3",10,7.5);
+        oi("holeM3",-18.5,-1.3);
+        oi("holeM3",1,17.6);
+        oi("holeM10",-19.5,20.05);
+        oi("holeM10",20.5,20.05);
+        oi("holeM10",0.5,-20.15);
+        oi("holeM6",-30,-22.5);
+        oi("holeM6",-15,-22.5);
+        oi("holeM6",15,-22.5);
+        oi("holeM6",30,-22.5);
+    }
     //surround
     //0,0,72,57
     //m3 hole 
