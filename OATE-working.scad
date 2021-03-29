@@ -3,7 +3,11 @@ s="3DPR";       //Style used for choosing clearances
 /*
 //o="LAZE";     //Ouput used for choosing STL or DXF output
 o="3DPR";
-m="PENH";       //Mode used for choosing what to draw
+//m="MAIN";
+//m="PENH";       //Mode used for choosing what to draw
+//m="CAAD";
+//m="PENH";
+m="MANP";
 //m="TEST";
 */
 
@@ -35,6 +39,14 @@ if(m=="MAIN"){
     }else{
         drawPENH();
     }
+}if(m=="MANP"){
+    if(o=="LAZE"){
+        projection(){
+            drawMANP();
+        }
+    }else{
+        drawMANP();
+    }
 }if(m=="TEST"){
     test();
 }
@@ -56,6 +68,9 @@ module drawMAIN(){
     drawPENH();
         translate([100,0,0]){
             drawCAAD();
+        }
+        translate([200,0,0]){
+            drawMANP();
         }
     }
 
@@ -104,4 +119,29 @@ module drawCAAD(){
     //0.5,-20.15
     //m6
     //(-30,-15,15,30),-22.5
+}
+
+module drawMANP(){
+    thick = 12;
+    difference(){
+        oi("plateOOBB",width=3,height=5
+        ,depth=thick,z=thick);
+        oi("holeM6",y=30,z=thick/2,rotY=90);
+        oi("holeM6",y=-30,z=thick/2,rotY=90);
+        OATEinsert("rfProbe",y=15);
+    }
+}
+
+module OATEinsert(item,x=0,y=0,z=0,ex=0,length=0,rotX=0,rotY=0,rotZ=0,width=0,height=0,depth=0,rad=0,color="gray",alpha=1){
+    color(color,alpha){
+            translate([x,y,z]){
+                rotate([rotX,rotY,rotZ]){    
+                    if(item=="rfProbe"){
+                        oi("holeRect",width=10,height=10);
+                        oi("holeM3",x=8);
+                        oi("holeM3",x=-8);
+                    }
+                }
+            }
+        }
 }
