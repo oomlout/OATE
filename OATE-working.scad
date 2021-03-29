@@ -1,12 +1,42 @@
-s="3DPR";
-//m="CAAD";
+s="3DPR";       //Style used for choosing clearances
+
+/*
+//o="LAZE";     //Ouput used for choosing STL or DXF output
+o="3DPR";
+m="PENH";       //Mode used for choosing what to draw
+//m="TEST";
+*/
+
 include <OPSC-base.scad>
 
-//test();
 
-//OATEdrawPENH();
-if(m=="CAAD"){
-    OATEdrawCAAD();
+
+if(m=="MAIN"){
+    if(o=="LAZE"){
+        projection(){
+            drawMAIN();
+        }
+    }else{
+        drawMAIN();
+    }
+}if(m=="CAAD"){
+    if(o=="LAZE"){
+        projection(){
+            drawCAAD();
+        }
+    }else{
+        drawCAAD();
+    }
+}if(m=="PENH"){
+    if(o=="LAZE"){
+        projection(){
+            drawPENH();
+        }
+    }else{
+        drawPENH();
+    }
+}if(m=="TEST"){
+    test();
 }
 
 
@@ -22,26 +52,31 @@ module test(){
 }
 
 
+module drawMAIN(){
+    drawPENH();
+        translate([100,0,0]){
+            drawCAAD();
+        }
+    }
 
-module OATEdrawPENH(){
+
+module drawPENH(){
     penOffset = 15;
     rad = 30;
     difference(){        
-        oi("Cylinder",rad=rad,depth=3);
-        oi("CouplerFlangeM5");
-        oi("HoleRect",x=penOffset-8,width=3,height=5);
-        oi("HoleRect",x=penOffset+8,width=3,height=5);
+        oi("cylinder",rad=rad,depth=3);
+        oi("couplerFlangeM5");
+        oi("holeRect",x=penOffset-8,width=3,height=5);
+        oi("holeRect",x=penOffset+8,width=3,height=5);
     }
     //pen
     penRad = 17/2;
     penLength = 100;
-    oi("Cylinder",x=penOffset,y=-penLength*3/4,z=17/2,rad=penRad,depth=penLength,rotX=90,color="red",alpha=.5);
-    
-    
+    //oi("Cylinder",x=penOffset,y=-penLength*3/4,z=17/2,rad=penRad,depth=penLength,rotX=90,color="red",alpha=.5);
 }
 
 // Draw CAAD --- Carriage Adapter
-module OATEdrawCAAD(){
+module drawCAAD(){
     difference(){
         oi("cubeRounded",width=72,height=57,depth=6);
         oi("holeM3",24,7.5);
