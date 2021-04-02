@@ -16,6 +16,8 @@
 		Pen Holder			PENH	For connecting a pen to a NEMA 17
 		Main-Plate			MANP	The plate for connecting all the bits to the head
 			Pen-Mech		PENM	for connecting the pen holder to the head
-			Pogo-Pins		POGP	Portion with pogo pins
+			Pogo-Pins		POGP	Pogo pins
 			QR-Reader		QRRE	Qr code reader
 			RF-Probe		RFPR	RF Probe
+			Pogo Board		POGB	Pogo Pin Board
+			
