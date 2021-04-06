@@ -5,9 +5,9 @@ s="3DPR";       //Style used for choosing clearances
 o="3DPR";
 //m="MAIN";
 //m="PENH";       //Mode used for choosing what to draw
-//m="CAAD";
+m="CAAD";
 //m="PENH";
-m="MANP";
+//m="MANP";
 //m="TEST";
 */
 
@@ -97,8 +97,8 @@ module drawPENH(){
 module drawCAAD(){
     difference(){
         oi("cubeRounded",width=72,height=57,depth=6);
-        oi("holeM3",24,7.5);
-        oi("holeM3",10,7.5);
+        oi("holeM6",24,7.5);
+        oi("holeM6",10,7.5);
         oi("holeM3",-18.5,-1.3);
         oi("holeM3",1,17.6);
         oi("holeM10",-19.5,20.05);
