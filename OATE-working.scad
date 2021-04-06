@@ -5,9 +5,9 @@ s="3DPR";       //Style used for choosing clearances
 o="3DPR";
 //m="MAIN";
 //m="PENH";       //Mode used for choosing what to draw
-m="CAAD";
+//m="CAAD";
 //m="PENH";
-//m="MANP";
+m="MANP";
 //m="TEST";
 */
 
@@ -139,7 +139,7 @@ module drawMANP(){
         oi("holeM6",y=30,z=thick/2,rotY=90);
         oi("holeM6",y=-30,z=thick/2,rotY=90);
         OATEinsert("rfProbe",y=20);
-        OATEinsert("POGB",rotZ=90,y=-15,z=12+1.6,offset=-13.6);
+        OATEinsert("POGB",rotZ=90,y=-15,z=3,offset=0);
         OATEinsert("QRRE",y=5,z=12-4);
         
         
@@ -154,7 +154,27 @@ module drawQRRE(clearance=0){
 
 module drawPOGB(offset=0){
     pogoH = 0;
-    echo("POGB");
+    //difference(){
+        //board
+        cl1=1;
+        clZ=15;
+        oi("cube",width=22+cl1,height=34+cl1,depth=clZ,z=clZ,color="green");
+        oi("cube",width=22+cl1,height=20,depth=500,z=250,color="green");
+        //mounting holes
+        
+        oi("holeM3",x=7,y=13,z=offset);
+        oi("holeM3",x=-7,y=13,z=offset);
+        oi("holeM3",x=7,y=-13,z=offset);
+        oi("holeM3",x=-7,y=-13,z=offset);
+    //}
+    
+    
+    
+    
+}
+
+module OLD01_drawPOGB(offset=0){
+    pogoH = 0;
     //difference(){
         //board
         cl1=1;
