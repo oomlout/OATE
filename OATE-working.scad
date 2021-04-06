@@ -1,6 +1,6 @@
 s="3DPR";       //Style used for choosing clearances
 
-/*
+
 //o="LAZE";     //Ouput used for choosing STL or DXF output
 o="3DPR";
 //m="MAIN";
@@ -9,7 +9,7 @@ o="3DPR";
 //m="PENH";
 m="MANP";
 //m="TEST";
-*/
+
 
 
 include <OPSC-base.scad>
@@ -138,7 +138,7 @@ module drawMANP(){
         ,depth=thick,z=thick);
         oi("holeM6",y=30,z=thick/2,rotY=90);
         oi("holeM6",y=-30,z=thick/2,rotY=90);
-        OATEinsert("rfProbe",y=20);
+        OATEinsert("rfProbe",y=20,z=3);
         OATEinsert("POGB",rotZ=90,y=-15,z=3,offset=0);
         OATEinsert("QRRE",y=5,z=12-4);
         
@@ -221,9 +221,11 @@ module OLD01_drawPOGB(offset=0){
 }
 
 module drawRFProbe(){
+    dep = 20;
+    oi("cube",width=22,height=12,depth=dep,z=dep);
     oi("holeRect",width=10,height=10);
-    oi("socketHeadM3",x=8,z=socketHeadM3Depth,rotY=180);
-    oi("socketHeadM3",x=-8,z=socketHeadM3Depth,rotY=180);
+    oi("holeM3",x=8,z=socketHeadM3Depth,rotY=180);
+    oi("holeM3",x=-8,z=socketHeadM3Depth,rotY=180);
     
 }
 
