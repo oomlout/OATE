@@ -96,7 +96,7 @@ module drawPENH(){
 // Draw CAAD --- Carriage Adapter
 module drawCAAD(){
     difference(){
-        oi("cubeRounded",width=(5*15)-3,height=(5*15)-3,y=7.5,depth=6);
+        oi("cubeRounded",width=(5*15)-3,height=(5*15)-3,y=7.5,depth=9);
         oi("holeM6",24,7.5);
         oi("holeM6",10,7.5);
         oi("holeM3",-18.5,-1.3);
