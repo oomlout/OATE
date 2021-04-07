@@ -1,15 +1,15 @@
 s="3DPR";       //Style used for choosing clearances
 
-
+/*
 //o="LAZE";     //Ouput used for choosing STL or DXF output
 o="3DPR";
 //m="MAIN";
 //m="PENH";       //Mode used for choosing what to draw
-//m="CAAD";
+m="CAAD";
 //m="PENH";
-m="MANP";
+//m="MANP";
 //m="TEST";
-
+*/
 
 
 include <OPSC-base.scad>
@@ -100,7 +100,7 @@ module drawCAAD(){
         oi("holeM6",24,7.5);
         oi("holeM6",10,7.5);
         oi("holeM3",-18.5,-1.3);
-        oi("holeM3",1,17.6);
+        oi("holeM3",-1,17.6);
         oi("holeM10",-19.5,20.05);
         oi("holeM10",20.5,20.05);
         oi("holeM10",0.5,-20.15);

@@ -2,4 +2,6 @@ REM ######  OATE GENERATE FILES  ######
 REM ###################################
 REM 
 
-start OATE-build-MAIN.bat
+SET MODE=MANP
+start OATE-build-part.bat
+

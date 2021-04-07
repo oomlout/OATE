@@ -2,4 +2,6 @@ REM ######  OATE GENERATE FILES  ######
 REM ###################################
 REM 
 
-start OATE-build-MAIN.bat
+SET MODE=PENH
+start OATE-build-part.bat
+
