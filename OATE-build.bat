@@ -18,11 +18,12 @@ REM Bed Plate
 set ITEM[5]=BEPL
 REM Blank
 set ITEM[6]=ZZZZ
-RRem Bed Spacer
-set ITEM[7]=BESP
-set ITEM[8]=ZZZZ
+set ITEM[7]=ZZZZ
+REM Bed Spacer
+set ITEM[8]=BESP
 set ITEM[9]=ZZZZ
-set ITEM[10]=ZZZZ
+REM Test Board Holder
+set ITEM[10]=TEBH
 
 
 

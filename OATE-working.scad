@@ -92,10 +92,11 @@ module draw5(){
     }
 }
 
+oobbSpacing = 15;
 module bedHoles(color){
     width = 15;
     height = 15;
-    oobbSpacing = 15;
+    
     for(x =[0:width-1]){
         for(y =[0:height-1]){
             if( !((x == 1 && y == 1) || 
@@ -147,15 +148,48 @@ module draw7(){
     
 }
 
-// ZZZZ
+// TEBH -- test Bed Holder
 // Description
-module draw9(){
+module draw10(){
+    color = "white";
+    oobbWid = 6;
+    oobbHei = 2;
+    wid = (15*oobbWid)-3;
+    hei = (15*oobbHei)-3;
+    dep = 12;
+    widOff = (15*oobbWid)/2 - oobbSpacing/2;
+    heiOff = (15*oobbHei)/2 - oobbSpacing/2;
+    
+    difference(){
+        oi("cubeRounded",width=wid,height=hei,depth=dep);
+        //mounting holes
+        oi("holeM6",x=(1-1)*oobbSpacing-widOff,y=(1-1)*oobbSpacing-heiOff);
+        oi("holeM6",x=(1-1)*oobbSpacing-widOff,y=(2-1)*oobbSpacing-heiOff);
+        #OATEinsert("TEBH",x=10,color=color);
+    }
+    
+}
+
+module drawTEBH(color){
+    extra = 1;
+    boardWid = 59.2;
+    boardHei = 18.60;
+    boardDep = 1.6;
+    boardLip = 3;
+    full = 100;
+    
+    //main Board
+    oi("cube",width=boardWid+extra,height=boardHei+extra,depth=boardDep+extra);
+    //board keepout
+    oi("cube",width=boardWid-boardLip,height=boardHei-boardLip,depth=full,z=full/2);
+    //usb socket
+    oi("cube",width=boardWid-boardLip,height=boardHei-boardLip,depth=full,z=full/2);
     
 }
 
 // ZZZZ
 // Description
-module draw10(){
+module draw9(){
     
 }
 
@@ -190,6 +224,8 @@ module OATEinsert(item,x=0,y=0,z=0,ex=0,length=0,rotX=0,rotY=0,rotZ=0,width=0,he
                             drawPOGB(offset=offset);
                     }if(item=="QRRE"){
                             drawQRRE();
+                    }if(item=="TEBH"){
+                            drawTEBH(color);
                     }
                 }
             }
