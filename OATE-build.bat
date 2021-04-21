@@ -44,4 +44,10 @@ del %FILEFULL%.stl
     openscad -o %FILEFULL%-!ITEM[%%i]!-LAZE.svg -D "i=%%i;o=\"LAZE"" OATE-LAZE.scad
 	del %FILEFULL%-!ITEM[%%i]!-LAZE.pdf
 	inkscape.exe --export-filename="%FILEFULL%-!ITEM[%%i]!-LAZE.pdf" "%FILEFULL%-!ITEM[%%i]!-LAZE.svg"	
+	prusa-slicer-console.exe --export-gcode --repair --output %FILEFULL%-!ITEM[%%i]!-3DPR.gcode  -load "C:\DB\Dropbox\BBBB-Product Working\3DPR\3DPR-commandLine\OOBB-run.ini" %FILEFULL%-!ITEM[%%i]!-3DPR.stl  
 ))
+
+REM #############################################################################
+REM ######      ALL DONE !!!!!! #################################################
+REM #############################################################################
+pause

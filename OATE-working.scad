@@ -152,7 +152,7 @@ module draw7(){
 // Description
 module draw10(){
     color = "white";
-    oobbWid = 6;
+    oobbWid = 7;
     oobbHei = 2;
     wid = (15*oobbWid)-3;
     hei = (15*oobbHei)-3;
@@ -165,25 +165,35 @@ module draw10(){
         //mounting holes
         oi("holeM6",x=(1-1)*oobbSpacing-widOff,y=(1-1)*oobbSpacing-heiOff);
         oi("holeM6",x=(1-1)*oobbSpacing-widOff,y=(2-1)*oobbSpacing-heiOff);
-        #OATEinsert("TEBH",x=10,color=color);
+        OATEinsert("TEBH",x=10,color=color);
     }
     
 }
 
 module drawTEBH(color){
     extra = 1;
-    boardWid = 59.2;
+    boardWid = 62.9;
     boardHei = 18.60;
     boardDep = 1.6;
-    boardLip = 3;
-    full = 100;
+    boardLip = 2;
+    full = 15;
     
     //main Board
     oi("cube",width=boardWid+extra,height=boardHei+extra,depth=boardDep+extra);
     //board keepout
     oi("cube",width=boardWid-boardLip,height=boardHei-boardLip,depth=full,z=full/2);
     //usb socket
-    oi("cube",width=boardWid-boardLip,height=boardHei-boardLip,depth=full,z=full/2);
+    usbWid=21+1;
+    usbHei=12+1;
+    usbX=-34;
+    usbY=0;
+    oi("cube",width=usbWid,height=usbHei,depth=full,x=usbX,y=usbY,z=full/2);
+    //SMD
+    smdWid=15+1;
+    smdHei=10+1;
+    smdX=32;
+    smdY=0;
+    oi("cube",width=smdWid,height=smdHei,depth=full,x=smdX,y=smdY,z=full/2);
     
 }
 
