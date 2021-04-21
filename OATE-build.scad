@@ -43,3 +43,40 @@ m="ALL";
 include <OATE-working.scad>
 
 
+module OATEbuild(){
+
+            translate([shift*0,0,0]){
+                draw1();
+            }
+            translate([shift*0,0,0]){
+                draw2();
+            }
+            translate([shift*0,0,]){
+                draw3();
+            }
+            translate([shift*0,0,0]){
+                draw4();
+            }
+            translate([shift*0,0,0]){
+                draw5();
+            }
+            translate([shift*0,0,]){
+                draw6();
+            }
+            translate([shift*0,0,0]){
+                draw7();
+            }
+            translate([shift*0,0,0]){
+                draw8();
+            }
+            translate([shift*0,0,0]){
+                draw9();
+            }
+            translate([shift*0,0,0]){
+                draw10();
+            }        
+
+}
+
+//i=-1;
+//OATEbuild();

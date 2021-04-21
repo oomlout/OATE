@@ -78,39 +78,72 @@ bedHeight = 233;
 bedHoleSpacing = 170;
 // BEPL -- Bed Plate
 // Description
-module draw4(){
+module draw5(){
+    color="green";
     difference(){
         //bed
-        oi("rectangleRounded",width=bedWidth,height=bedHeight,depth=3)
-        //bed holes
-        oi("holeM4",x=bedHoleSpacing/2,y=bedHoleSpacing/2);
-        oi("holeM4",x=bedHoleSpacing/2,y=-bedHoleSpacing/2);
-        oi("holeM4",x=-bedHoleSpacing/2,y=bedHoleSpacing/2);
-        oi("holeM4",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2);
+        oi("cubeRounded",width=bedWidth,height=bedHeight,depth=3,color=color);
+        //connecting holes
+        oi("holeM4",x=bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
+        oi("holeM4",x=bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        oi("holeM4",x=-bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
+        oi("holeM4",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        bedHoles(color);
+    }
+}
+
+module bedHoles(color){
+    width = 15;
+    height = 15;
+    oobbSpacing = 15;
+    for(x =[0:width-1]){
+        for(y =[0:height-1]){
+            if( !((x == 1 && y == 1) || 
+                (x == width-2 && y == height-2)|| 
+                (x == 1 && y == height-2)|| 
+                (x == width-2 && y == 1))
+            ){
+                xx= (x * oobbSpacing) - ((width-1)*oobbSpacing)/2;
+                yy= (y * oobbSpacing) - ((height-1)*oobbSpacing)/2;
+                oi("holeM6",x=xx,y=yy,color=color);
+            }
+        }
+    }
+        
     
 }
 
-// BBESP -- Bed Spacer Plate
-// Description
-module draw5(){
+//BLANK
+module draw4(){
     
 }
 
-// ZZZZ
+// BLANK
 // Description
 module draw6(){
     
 }
 
-// ZZZZ
+// BBESP -- Bed Spacer Plate
 // Description
-module draw7(){
-    
-}
+module draw8(){
+    color="blue";
+    difference(){
+        //bed
+        oi("cubeRounded",width=bedWidth,height=bedHeight,depth=3,color=color);
+        //connecting holes
+        oi("holeM10",x=bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
+        oi("holeM10",x=bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        oi("holeM10",x=-bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
+        oi("holeM10",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        bedHoles(color);
+    }
+}    
+
 
 // ZZZZ
 // Description
-module draw8(){
+module draw7(){
     
 }
 
