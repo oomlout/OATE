@@ -32,7 +32,7 @@ SET FILEFULL=output\%PROJECT%
 
 del %FILEFULL%.stl
 
-(for /l %%i in (0,1,10) do (
+(for /l %%i in (10,1,10) do (
     echo Making Index: %%i
     del %FILEFULL%-!ITEM[%%i]!-3DPR.stl   
     openscad -o %FILEFULL%-!ITEM[%%i]!-3DPR.stl -D "i=%%i;o=\"3DPR"" OATE-3DPR.scad
