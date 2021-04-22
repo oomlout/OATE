@@ -73,8 +73,9 @@ penOffset = 15;
     
 }
 
+holeShift = 5*15;
 bedWidth = 233;
-bedHeight = 233;
+bedHeight = 233+holeShift;
 bedHoleSpacing = 170;
 // BEPL -- Bed Plate
 // Description
@@ -84,10 +85,10 @@ module draw5(){
         //bed
         oi("cubeRounded",width=bedWidth,height=bedHeight,depth=3,color=color);
         //connecting holes
-        oi("holeM4",x=bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
-        oi("holeM4",x=bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
-        oi("holeM4",x=-bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
-        oi("holeM4",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        oi("holeM4",x=bedHoleSpacing/2,y=bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM4",x=bedHoleSpacing/2,y=-bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM4",x=-bedHoleSpacing/2,y=bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM4",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2+holeShift/2,color=color);
         bedHoles(color);
     }
 }
@@ -95,14 +96,14 @@ module draw5(){
 oobbSpacing = 15;
 module bedHoles(color){
     width = 15;
-    height = 15;
+    height = 20;
     
     for(x =[0:width-1]){
         for(y =[0:height-1]){
-            if( !((x == 1 && y == 1) || 
+            if( !((x == 1 && y == 1+(holeShift/oobbSpacing)) || 
                 (x == width-2 && y == height-2)|| 
                 (x == 1 && y == height-2)|| 
-                (x == width-2 && y == 1))
+                (x == width-2 && y == 1+(holeShift/oobbSpacing)))
             ){
                 xx= (x * oobbSpacing) - ((width-1)*oobbSpacing)/2;
                 yy= (y * oobbSpacing) - ((height-1)*oobbSpacing)/2;
@@ -133,10 +134,10 @@ module draw8(){
         //bed
         oi("cubeRounded",width=bedWidth,height=bedHeight,depth=3,color=color);
         //connecting holes
-        oi("holeM10",x=bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
-        oi("holeM10",x=bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
-        oi("holeM10",x=-bedHoleSpacing/2,y=bedHoleSpacing/2,color=color);
-        oi("holeM10",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2,color=color);
+        oi("holeM10",x=bedHoleSpacing/2,y=bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM10",x=bedHoleSpacing/2,y=-bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM10",x=-bedHoleSpacing/2,y=bedHoleSpacing/2+holeShift/2,color=color);
+        oi("holeM10",x=-bedHoleSpacing/2,y=-bedHoleSpacing/2+holeShift/2,color=color);
         bedHoles(color);
     }
 }    
