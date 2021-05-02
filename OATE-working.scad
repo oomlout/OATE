@@ -4,7 +4,7 @@
 include <OPSC-base.scad>
 
 
-OPSCbuild();
+OPSCbuild(shift=300);
 
 
 // MANP -- Main Plate
@@ -79,7 +79,7 @@ bedHeight = 233+holeShift;
 bedHoleSpacing = 170;
 // BEPL -- Bed Plate
 // Description
-module draw5(){
+module draw4(){
     color="green";
     difference(){
         //bed
@@ -116,19 +116,19 @@ module bedHoles(color){
 }
 
 //BLANK
-module draw4(){
+module draw8(){
     
 }
 
 // BLANK
 // Description
-module draw6(){
+module draw7(){
     
 }
 
 // BBESP -- Bed Spacer Plate
 // Description
-module draw8(){
+module draw5(){
     color="blue";
     difference(){
         //bed
@@ -145,13 +145,13 @@ module draw8(){
 
 // ZZZZ
 // Description
-module draw7(){
+module draw9(){
     
 }
 
 // TEBH -- test Bed Holder
 // Description
-module draw10(){
+module draw6(){
     color = "white";
     oobbWid = 7;
     oobbHei = 2;
@@ -200,7 +200,7 @@ module drawTEBH(color){
 
 // ZZZZ
 // Description
-module draw9(){
+module draw10(){
     
 }
 
