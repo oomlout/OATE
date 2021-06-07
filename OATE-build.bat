@@ -13,12 +13,13 @@ set ITEM[2]=CAAD
 REM Pen Holder
 set ITEM[3]=PENH
 REM Blacnl
-set ITEM[4]=ZZZZ
+set ITEM[4]=BEPL
 REM Bed Plate
-set ITEM[5]=BEPL
-REM Blank
-set ITEM[6]=ZZZZ
-set ITEM[7]=ZZZZ
+set ITEM[5]=BESP
+REM Test Bed Holder
+set ITEM[6]=TEBH
+REM Camera Mount
+set ITEM[7]=CAMM
 REM Bed Spacer
 set ITEM[8]=BESP
 set ITEM[9]=ZZZZ

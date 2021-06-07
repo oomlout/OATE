@@ -27,17 +27,18 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1618"
+   inkscape:window-width="1680"
    inkscape:window-height="1027"
    id="namedview101"
    showgrid="false"
-   inkscape:zoom="0.70681219"
-   inkscape:cx="396.85039"
-   inkscape:cy="561.25984"
-   inkscape:window-x="54"
-   inkscape:window-y="2092"
+   inkscape:zoom="2.8272488"
+   inkscape:cx="57.439622"
+   inkscape:cy="2.1991993"
+   inkscape:window-x="-8"
+   inkscape:window-y="1042"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg99" />
+   inkscape:current-layer="svg99"
+   inkscape:snap-object-midpoints="true" />
  <defs
    id="defs39">
   <font
@@ -112,7 +113,9 @@
   </style>
  </defs>
  <g
-   id="Layer_x0020_1">
+   id="Layer_x0020_1"
+   transform="translate(0,-296.99987)"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
   <circle
@@ -120,182 +123,218 @@
    cx="17"
    cy="280"
    r="1"
-   id="circle42" />
+   id="circle42"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <circle
    class="fil0 str0"
    cx="-17"
    cy="280"
    r="1"
-   id="circle44" />
+   id="circle44"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <circle
    class="fil0 str0"
    cx="-17"
    cy="314"
    r="1"
-   id="circle46" />
+   id="circle46"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <g
-   id="_200666464">
+   id="_200666464"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">
    <rect
    id="_200666920"
    class="fil0 str1"
    x="-19"
    y="278"
    width="38"
-   height="38" />
+   height="38"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <rect
    id="_200666848"
    class="fil0 str1"
    x="-16"
    y="281"
    width="32"
-   height="32" />
+   height="32"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <circle
    id="_200666776"
    class="fil0 str1"
    cx="14"
    cy="283"
-   r="1" />
+   r="1"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <circle
    id="_200666704"
    class="fil0 str1"
    cx="-14"
    cy="283"
-   r="1" />
+   r="1"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <circle
    id="_200666632"
    class="fil0 str1"
    cx="14"
    cy="311"
-   r="1" />
+   r="1"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <circle
    id="_200666560"
    class="fil0 str1"
    cx="-14"
    cy="311"
-   r="1" />
+   r="1"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
    <circle
    id="_200666488"
    class="fil0 str1"
    cy="297"
-   r="8" />
+   r="8"
+   cx="0"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
   <path
    class="fil0 str0"
-   d="M-43 315.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path56" />
+   d="m -43,315.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 314 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H -37 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 320 h -1.5 -1.5 v -0.4015 c -0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985 H -43 V 317 Z"
+   id="path56"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M-43 295.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path58" />
+   d="m -43,295.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 294 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H -37 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 300 h -1.5 -1.5 v -0.4015 c -0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985 H -43 V 297 Z"
+   id="path58"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M-43 275.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path60" />
+   d="m -43,275.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 274 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H -37 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 280 h -1.5 -1.5 v -0.4015 c -0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985 H -43 V 277 Z"
+   id="path60"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="-41.5"
    y="304"
    width="3"
    height="6"
-   id="rect62" />
+   id="rect62"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="-41.5"
    y="284"
    width="3"
    height="6"
-   id="rect64" />
+   id="rect64"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M37 315.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path66" />
+   d="m 37,315.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 314 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H 43 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 320 H 40 38.5 v -0.4015 C 38.0447,319.335 37.665,318.9553 37.4015,318.5 H 37 V 317 Z"
+   id="path66"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M37 295.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path68" />
+   d="m 37,295.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 294 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H 43 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 300 H 40 38.5 v -0.4015 C 38.0447,299.335 37.665,298.9553 37.4015,298.5 H 37 V 297 Z"
+   id="path68"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M37 275.5l0.4015 0c0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985l0 -0.4015 1.5 0 1.5 0 0 0.4015c0.4553,0.2635 0.835,0.6432 1.0985,1.0985l0.4015 0 0 1.5 0 1.5 -0.4015 0c-0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985l0 0.4015 -1.5 0 -1.5 0 0 -0.4015c-0.4553,-0.2635 -0.835,-0.6432 -1.0985,-1.0985l-0.4015 0 0 -1.5 0 -1.5z"
-   id="path70" />
+   d="m 37,275.5 h 0.4015 c 0.2635,-0.4553 0.6432,-0.835 1.0985,-1.0985 V 274 h 1.5 1.5 v 0.4015 c 0.4553,0.2635 0.835,0.6432 1.0985,1.0985 H 43 v 1.5 1.5 h -0.4015 c -0.2635,0.4553 -0.6432,0.835 -1.0985,1.0985 V 280 H 40 38.5 v -0.4015 C 38.0447,279.335 37.665,278.9553 37.4015,278.5 H 37 V 277 Z"
+   id="path70"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="38.5"
    y="304"
    width="3"
    height="6"
-   id="rect72" />
+   id="rect72"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="38.5"
    y="284"
    width="3"
    height="6"
-   id="rect74" />
+   id="rect74"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="-33"
    y="315.5"
    width="6"
    height="3"
-   id="rect76" />
+   id="rect76"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="27"
    y="315.5"
    width="6"
    height="3"
-   id="rect78" />
+   id="rect78"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="-33"
    y="295.5"
    width="6"
    height="3"
-   id="rect80" />
+   id="rect80"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="27"
    y="295.5"
    width="6"
    height="3"
-   id="rect82" />
+   id="rect82"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="-33"
    y="275.5"
    width="6"
    height="3"
-   id="rect84" />
+   id="rect84"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <rect
    class="fil0 str0"
    x="27"
    y="275.5"
    width="6"
    height="3"
-   id="rect86" />
+   id="rect86"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <text
-   x="-37.1377"
-   y="305.643"
+   x="-37.137699"
+   y="305.64301"
    class="fil0 str3 fnt0"
-   id="text88">OPNP</text>
+   id="text88"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">OPNP</text>
   <text
-   x="-36.4773"
+   x="-36.477299"
    y="311.396"
    class="fil0 str3 fnt0"
-   id="text90">05-03</text>
+   id="text90"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">05-03</text>
   <path
    class="fil0 str0"
-   d="M-46.5 318.5l0 -43c0,-2.7609 2.2391,-5 5,-5l83 0c2.7609,0 5,2.2391 5,5l0 43c0,2.7609 -2.2391,5 -5,5l-83 0c-2.7609,0 -5,-2.2391 -5,-5z"
-   id="path92" />
+   d="m -46.5,318.5 v -43 c 0,-2.7609 2.2391,-5 5,-5 h 83 c 2.7609,0 5,2.2391 5,5 v 43 c 0,2.7609 -2.2391,5 -5,5 h -83 c -2.7609,0 -5,-2.2391 -5,-5 z"
+   id="path92"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <circle
    class="fil0 str0"
    cx="17"
    cy="314"
    r="1"
-   id="circle94" />
+   id="circle94"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
    class="fil0 str0"
-   d="M-14.5 278l29.0001 0 0 2c0,1.3804 1.1196,2.5 2.5,2.5l1.9999 0 0 29.0001 -1.9999 0c-1.3804,0 -2.5,1.1196 -2.5,2.5l0 1.9999 -29.0001 0 0 -1.9999c0,-1.3804 -1.1196,-2.5 -2.5,-2.5l-2 0 0 -29.0001 2 0c1.3804,0 2.5,-1.1196 2.5,-2.5l0 -2z"
-   id="path96" />
+   d="m -14.5,278 h 29.0001 v 2 c 0,1.3804 1.1196,2.5 2.5,2.5 H 19 v 29.0001 h -1.9999 c -1.3804,0 -2.5,1.1196 -2.5,2.5 V 316 H -14.5 v -1.9999 c 0,-1.3804 -1.1196,-2.5 -2.5,-2.5 h -2 V 282.5 h 2 c 1.3804,0 2.5,-1.1196 2.5,-2.5 z"
+   id="path96"
+   style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
  </g>
-</svg>
+<path
+   style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+   d="M -17,-16.99987 H 17"
+   id="path928" /></svg>

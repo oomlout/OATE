@@ -131,9 +131,21 @@ module draw8(){
     
 }
 
-// BLANK
+// CAMM -- Camera Mount
 // Description
 module draw7(){
+    thick = 12;
+    color="gray";
+    difference(){
+        cutoutShift=6;
+        oi("plateOOBB",width=3,height=5
+        ,depth=thick,z=thick,color=color);
+        oi("plateOOBB",width=3,height=3
+        ,depth=thick-cutoutShift,z=cutoutShift,color=color);
+        oi("holeM6",y=30,z=thick/2,rotY=90,color=color);
+        oi("holeM6",y=-30,z=thick/2,rotY=90,color=color);
+        OATEinsert("camera", color=color);
+    }
     
 }
 
@@ -248,7 +260,8 @@ module OATEinsert(item,x=0,y=0,z=0,ex=0,length=0,rotX=0,rotY=0,rotZ=0,width=0,he
                             drawQRRE();
                     }if(item=="TEBH"){
                             drawTEBH(color);
-                    }
+                    }if(item=="camera"){
+                            drawCamera(color);
                 }
             }
         }
@@ -285,7 +298,28 @@ module drawPOGB(offset=0){
         oi("holeM3",x=7,y=-13,z=offset);
         oi("holeM3",x=-7,y=-13,z=offset);
     //}
-    
+}
+ 
+ module drawCamera(color){
+     //holes
+     holeSpacing = 34;
+     oi("holeM2",x=holeSpacing/2,y=holeSpacing/2,color=color);
+     oi("holeM2",x=-holeSpacing/2,y=holeSpacing/2,color=color);
+     oi("holeM2",x=holeSpacing/2,y=-holeSpacing/2,color=color);
+     oi("holeM2",x=-holeSpacing/2,y=-holeSpacing/2,color=color);
+     //cutout
+     cutoutSize=38;
+     difference(){
+        oi("cube",width=cutoutSize,height=cutoutSize,depth=100,z=50,color=color);
+        oi("holeM6",x=holeSpacing/2,y=holeSpacing/2,color=color);
+    oi("holeM6",x=-holeSpacing/2,y=holeSpacing/2,color=color);
+    oi("holeM6",x=holeSpacing/2,y=-holeSpacing/2,color=color);
+    oi("holeM6",x=-holeSpacing/2,y=-holeSpacing/2,color=color);
+     }
+     
+  
+  
+ }   
     
     
     
