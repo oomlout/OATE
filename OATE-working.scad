@@ -30,28 +30,39 @@ module draw1(){
 // Description
 module draw2(){
     color="orange";
-    difference(){
-        oi("cubeRounded",width=(5*15)-3,height=(5*15)-3,y=7.5,depth=6,color=color);
-        oi("holeM6",24,7.5,color=color);
-        oi("holeM6",10,7.5,color=color);
-        oi("holeM3",-18.5,-1.3,color=color);
-        oi("holeM3",-1,17.6,color=color);
-        oi("holeM10",-19.5,20.05,color=color);
-        oi("holeM10",20.5,20.05,color=color);
-        oi("holeM10",0.5,-20.15,color=color);
-        //bottom role of holes
-        oi("holeM6",-30,-22.5,color=color);
-        oi("holeM6",-15,-22.5,color=color);
-        oi("holeM6",15,-22.5,color=color);
-        oi("holeM6",30,-22.5,color=color);
-        //top row of holes
-        oi("holeM6",-30,37.5,color=color);
-        oi("holeM6",-15,37.5,color=color);
-        oi("holeM6",0,37.5,color=color);
-        oi("holeM6",15,37.5,color=color);
-        oi("holeM6",30,37.5,color=color);
+    thickness = 12;
+    union(){
+        //main piece
+        difference(){
+            oi("cubeRounded",width=(5*15)-3,height=(5*15)-3,y=7.5,depth=thickness,color=color);
+            oi("holeM6",24,7.5,color=color);
+            oi("holeM6",10,7.5,color=color);
+            oi("holeM3",-18.5,-1.3,color=color);
+            oi("holeM3",-1,17.6,color=color);
+            oi("holeM10",-19.5,20.05,color=color);
+            oi("holeM10",20.5,20.05,color=color);
+            oi("holeM10",0.5,-20.15,color=color);
+            //bottom role of holes
+            oi("holeM6",-30,-22.5,color=color);
+            oi("holeM6",-15,-22.5,color=color);
+            oi("holeM6",15,-22.5,color=color);
+            oi("holeM6",30,-22.5,color=color);
+            //top row of holes
+            oi("holeM6",-30,37.5,color=color);
+            oi("holeM6",-15,37.5,color=color);
+            oi("holeM6",0,37.5,color=color);
+            oi("holeM6",15,37.5,color=color);
+            oi("holeM6",30,37.5,color=color);
+        }
+        //bumper
+        difference(){
+            bumpDepth=3;
+            bumpShift=3;
+            bumpInset=30;
+            oi("cubeRounded",width=(5*15)-3,height=((5*15)-3)-bumpInset,y=7.5,depth=3,z=bumpDepth,color=color);
+            oi("cube",width=(5*15)-3,x=bumpShift,height=(5*15)-3,y=7.5,depth=bumpDepth,z=bumpDepth,color=color);
+        }
     }
-    
 }
 
 // PENH -- Pen Holder

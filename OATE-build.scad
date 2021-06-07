@@ -7,7 +7,7 @@ s="3DPR";       //extra clearance added
 o="3DPR";       //STL (3d) 
 //o="LAZE";       //DXF (2d)
 
-i=0;    //Build all
+i=11;    //Build all
 m="ALL";
 
 //i=1;    //Build all
