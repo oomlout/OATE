@@ -57,10 +57,10 @@ module draw2(){
         //bumper
         difference(){
             bumpDepth=3;
-            bumpShift=-3;
+            bumpShift=3;
             bumpInset=30;
-            oi("cubeRounded",width=(5*15)-3,height=((5*15)-3)-bumpInset,y=7.5,depth=3,z=bumpDepth,color=color);
-            oi("cube",width=(5*15)-3,x=bumpShift,height=(5*15)-3,y=7.5,depth=bumpDepth,z=bumpDepth,color=color);
+            oi("cubeRounded",width=(5*15)-3,height=((5*15)-3)-bumpInset,y=7.5,depth=3,z=-thickness,color=color);
+            oi("cube",width=(5*15)-3,x=bumpShift,height=(5*15)-3,y=7.5,depth=bumpDepth,z=-thickness,color=color);
         }
     }
 }
