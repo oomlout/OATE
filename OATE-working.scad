@@ -13,12 +13,20 @@ module draw1(){
     color="red";
     thick = 12;
     difference(){
-        oi("plateOOBB",width=3,height=5
-        ,depth=thick,z=thick,color="red");
+        extra = 2;
+        oi("plateOOBB",y=-extra*15/2,width=3,height=5+extra,depth=thick,z=thick,color="red");
         oi("holeM6",y=30,z=thick/2,rotY=90,color="red");
         oi("holeM6",y=-30,z=thick/2,rotY=90,color="red");
-        OATEinsert("rfProbe",rotZ=90,y=20,z=3,color="red");
-        OATEinsert("POGB",rotZ=90,y=-15,z=3,offset=0,color="red");
+        offset = -50;
+        diff=42.55;
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff - 3,z=3,color="red");
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff - 2,z=3,color="red");
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff - 1,z=3,color="red");
+        OATEinsert("rfProbe",rotZ=90,x=0.5,y=offset + diff - 0,z=3,color="red");
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff + 1,z=3,color="red");
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff + 2,z=3,color="red");
+        //OATEinsert("rfProbe",rotZ=90,y=offset + diff + 3,z=3,color="red");
+        OATEinsert("POGB",rotZ=90,y=offset,z=3,offset=0,color="red");
         //OATEinsert("QRRE",y=5,z=12-4,color="red");
         
         
