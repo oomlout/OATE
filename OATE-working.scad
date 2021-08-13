@@ -17,9 +17,9 @@ module draw1(){
         ,depth=thick,z=thick,color="red");
         oi("holeM6",y=30,z=thick/2,rotY=90,color="red");
         oi("holeM6",y=-30,z=thick/2,rotY=90,color="red");
-        OATEinsert("rfProbe",y=20,z=3,color="red");
+        OATEinsert("rfProbe",rotZ=90,y=20,z=3,color="red");
         OATEinsert("POGB",rotZ=90,y=-15,z=3,offset=0,color="red");
-        OATEinsert("QRRE",y=5,z=12-4,color="red");
+        //OATEinsert("QRRE",y=5,z=12-4,color="red");
         
         
     }    
@@ -65,9 +65,25 @@ module draw2(){
     }
 }
 
-// PENH -- Pen Holder
+// QRSH -- QR Code Scanner Holder
 // Description
 module draw3(){
+    color = "yellow";
+    thickness = 12;
+    difference(){        
+        oi("cubeRounded",width=(1.2*15)-3,height=(5*15)-3,y=0,depth=thickness,color=color);
+        oi("holeM6",y=-30,z=-thickness/2,rotY=90,color=color);
+        oi("holeM6",y=30,z=-thickness/2,rotY=90,color=color);
+        OATEinsert("QRRE",x=-2,y=0,z=0,color=color,z=-thickness,rotZ=90,clearance=1);
+        OATEinsert("QRRE",x=-1,y=0,z=0,color=color,z=-thickness,rotZ=90,clearance=1);
+        }
+    
+}
+
+
+// PENH -- Pen Holder
+// Description
+module draw3OLD(){
     color = "yellow";
 penOffset = 15;
     rad = 30;
@@ -278,6 +294,12 @@ module drawRFProbe(){
 }
 
 module drawQRRE(clearance=0){
+    oi("cube",width=21.4+clearance,height=11.8+clearance,depth=13.5,z=13.5);
+    oi("holeM16D",x=14.6/2,z=6.1,rotX=90);
+    oi("holeM16D",x=-14.6/2,z=6.1,rotX=90);
+    
+}
+module drawQRREOLD(clearance=0){
     oi("cube",width=21.4+clearance,height=11.8+clearance,depth=13.5,z=13.5);
     oi("holeM10");
     

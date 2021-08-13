@@ -10,8 +10,8 @@ REM Main Plate
 set ITEM[1]=MANP
 REM Carriage Adapter
 set ITEM[2]=CAAD
-REM Pen Holder
-set ITEM[3]=PENH
+REM QR Scanner Holder
+set ITEM[3]=QRSH
 REM Blacnl
 set ITEM[4]=BEPL
 REM Bed Plate
