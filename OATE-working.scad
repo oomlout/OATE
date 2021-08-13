@@ -74,8 +74,8 @@ module draw3(){
         oi("cubeRounded",width=(1.2*15)-3,height=(5*15)-3,y=0,depth=thickness,color=color);
         oi("holeM6",y=-30,z=-thickness/2,rotY=90,color=color);
         oi("holeM6",y=30,z=-thickness/2,rotY=90,color=color);
-        OATEinsert("QRRE",x=-2,y=0,z=0,color=color,z=-thickness,rotZ=90,clearance=1);
-        OATEinsert("QRRE",x=-1,y=0,z=0,color=color,z=-thickness,rotZ=90,clearance=1);
+        OATEinsert("QRRE",x=-2,y=0,color=color,z=-thickness,rotZ=90,clearance=1);
+        OATEinsert("QRRE",x=-1,y=0,  color=color,z=-thickness,rotZ=90,clearance=1);
         }
     
 }
