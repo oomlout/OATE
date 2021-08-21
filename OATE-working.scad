@@ -204,10 +204,16 @@ color = "white";
         oi("holeM6",x=-gv("OS")*(w-1)/2,y=gv("OS")*(h-1)/2); 
         oi("holeM6",x=gv("OS")*(w-1)/2,y=-gv("OS")*(h-1)/2); 
         oi("holeM6",x=-gv("OS")*(w-1)/2,y=-gv("OS")*(h-1)/2); 
-        
-        for(i=[0:numBoards-1]){ 
-            OATEinsert("unit",y=boardSpacing * i - (boardSpacing*numBoards/2)+boardSpacing/2,x=0, color=color);
+        //test
+        for(i=[0:numBoards-1]){
+           //rad for clearance 
+            OATEinsert("unit",rad=0.3+0.1*i,y=boardSpacing * i - (boardSpacing*numBoards/2)+boardSpacing/2,x=0, color=color);
        }
+       //normal
+       
+       // for(i=[0:numBoards-1]){ 
+      //      OATEinsert("unit",y=boardSpacing * i - (boardSpacing*numBoards/2)+boardSpacing/2,x=0, color=color);
+      // }
     }
     
 }
@@ -264,7 +270,7 @@ module drawTEBH(color){
 // BHX1 Board Holder X 1
 // Description
 module draw10(){
-    color = gray;
+    color = "gray";
     difference(){
         oi("plateOOBB",width=7,height=4,depth=3);
         oi("holeM6",x=gv("OS3"),y=gv("OS1")*1.5); 
@@ -311,14 +317,14 @@ module OATEinsert(item,x=0,y=0,z=0,ex=0,length=0,rotX=0,rotY=0,rotZ=0,width=0,he
                     }if(item=="camera"){
                             drawCamera(color);
                     }if(item=="unit"){
-                            drawUnit(color);
+                            drawUnit(color,clear=rad);
                     }
             }
         }
 }
 
-module drawUnit(color){
-    clear = 0.5;
+module drawUnit(color,clear=0.5){
+    //clear = 0.5;
     seperation=70.935;
     //board
     boardW=67;
