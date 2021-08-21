@@ -34,10 +34,10 @@ m="XXXX";
 //i=8;    //Build all
 //m="XXXX";
 
-//i=9;    //Build all
+ i=9;    //Build all
 //m="XXXX";
 
-i=10;    //Build all
+//i=10;    //Build all
 //m="XXXX";
 
 include <OATE-working.scad>

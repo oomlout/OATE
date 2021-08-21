@@ -195,7 +195,7 @@ module draw5(){
 module draw9(){
     numBoards = 7; 
     boardSpacing = 21;
-color = white;
+color = "white";
     difference(){
         h = 12;
         w = 7;
