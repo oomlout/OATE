@@ -10,7 +10,7 @@ o="3DPR";       //STL (3d)
 //i=11;    //Build all
 //m="ALL";
 
-i=1;    //Build all
+//i=1;    //Build all
 m="XXXX";
 
 //i=2;    //Build all
@@ -37,7 +37,7 @@ m="XXXX";
 //i=9;    //Build all
 //m="XXXX";
 
-//i=10;    //Build all
+i=10;    //Build all
 //m="XXXX";
 
 include <OATE-working.scad>

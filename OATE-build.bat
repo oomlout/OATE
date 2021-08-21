@@ -22,9 +22,9 @@ REM Camera Mount
 set ITEM[7]=CAMM
 REM Bed Spacer
 set ITEM[8]=BESP
-set ITEM[9]=ZZZZ
+set ITEM[9]=BHX8
 REM Test Board Holder
-set ITEM[10]=TEBH
+set ITEM[10]=BHX1
 
 
 

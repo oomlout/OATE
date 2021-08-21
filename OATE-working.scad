@@ -190,9 +190,25 @@ module draw5(){
 }    
 
 
-// ZZZZ
+// board array
 // Description
 module draw9(){
+    numBoards = 7; 
+    boardSpacing = 21;
+color = white;
+    difference(){
+        h = 12;
+        w = 7;
+        oi("plateOOBB",y=0,width=w,height=h,depth=3);
+        oi("holeM6",x=gv("OS")*(w-1)/2,y=gv("OS")*(h-1)/2); 
+        oi("holeM6",x=-gv("OS")*(w-1)/2,y=gv("OS")*(h-1)/2); 
+        oi("holeM6",x=gv("OS")*(w-1)/2,y=-gv("OS")*(h-1)/2); 
+        oi("holeM6",x=-gv("OS")*(w-1)/2,y=-gv("OS")*(h-1)/2); 
+        
+        for(i=[0:numBoards-1]){ 
+            OATEinsert("unit",y=boardSpacing * i - (boardSpacing*numBoards/2)+boardSpacing/2,x=0, color=color);
+       }
+    }
     
 }
 
@@ -245,10 +261,18 @@ module drawTEBH(color){
     
 }
 
-// ZZZZ
+// BHX1 Board Holder X 1
 // Description
 module draw10(){
-    
+    color = gray;
+    difference(){
+        oi("plateOOBB",width=7,height=4,depth=3);
+        oi("holeM6",x=gv("OS3"),y=gv("OS1")*1.5); 
+        oi("holeM6",x=gv("OS3"),y=-gv("OS1")*1.5); 
+        oi("holeM6",x=-gv("OS3"),y=gv("OS1")*1.5); 
+        oi("holeM6",x=-gv("OS3"),y=-gv("OS1")*1.5); 
+        OATEinsert("unit",x=0,y=0, color=color);
+    }
 }
 
 
@@ -286,11 +310,31 @@ module OATEinsert(item,x=0,y=0,z=0,ex=0,length=0,rotX=0,rotY=0,rotZ=0,width=0,he
                             drawTEBH(color);
                     }if(item=="camera"){
                             drawCamera(color);
-                }
+                    }if(item=="unit"){
+                            drawUnit(color);
+                    }
             }
         }
 }
 
+module drawUnit(color){
+    clear = 0.5;
+    seperation=70.935;
+    //board
+    boardW=67;
+    boardH=19;
+    boardThickness=1.6;
+    
+    oi("cube",x=5.5,width=boardW+clear,height=boardH+clear,depth=boardThickness,z=boardThickness,color=color);
+    //usb
+    usbW=14.825;
+    usbH=12.55;
+    oi("cube",width=usbW+ clear,height=usbH+clear,x=-seperation/2,color=color,z=50, depth=100);
+    //sma
+    smaW=8;
+    smaH=8;
+    oi("cube",width=smaW+clear,height=smaH+clear,x=seperation/2,color=color,z=50, depth=100);
+}
 
 module drawRFProbe(){
     dep = 20;
